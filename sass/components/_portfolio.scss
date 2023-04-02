@@ -1,0 +1,129 @@
+@import"../utils/vars" ;
+
+.section {
+	// padding: 94px 0px;
+	// padding-top: 94px;
+
+	&__button-list {
+		display: flex;
+		justify-content: center;
+		gap: 8px;
+		padding: 94px 0px 50px 0px;
+	}
+
+	&__button {
+		font-size: 16px;
+		line-height: 26px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		background: #F5F4FA;
+		border: 0;
+		border-radius: 4px;
+		padding: 6px 22px;
+		transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+			color: $color_4;
+			background: #2196F3;
+			border: none;
+			box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+			cursor: pointer;
+			transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
+
+	&__container-list {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+		margin-top: 50px;
+		margin-bottom: 94px;
+		margin: 0;
+		padding: 0;
+		justify-content: center;
+		margin: 0 auto;
+		padding-bottom: 94px;
+		align-items: center;
+		position: relative;
+	}
+
+	&__container-portfolio {
+		height: 404px;
+		background: #FFFFFF;
+		border-bottom: 1px solid #EEEEEE;
+		position: relative;
+		transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+			border: 1px solid #EEEEEE;
+			cursor: pointer;
+			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+		}
+	}
+
+	&__container-image {
+		height: 404px;
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		overflow: hidden;
+		position: relative;
+		&:hover {
+			.over {
+				transform: translateY(0px);
+			}
+			.section__overlay-portfolio {
+				transform: translateY(0px);
+			}
+		}
+	}
+
+	&__container-overlay-image-portfolio {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__overlay-portfolio {
+		position: absolute;
+		background: rgba(0, 0, 255, 0.7);
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		transform: translateY(100%);
+		transition: transform 250ms linear;
+		opacity: 0.9;
+		bottom: 0;
+	}
+
+	&__overlay-text-portfolio {
+		font-family: $font-family_1;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+		color: $color_4;
+		padding: 64px 24px 91px 24px;
+	}
+
+	&__container-title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 36px;
+		letter-spacing: 0.06em;
+		text-align: left;
+		padding: 20px 24px 4px;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__container-sub-title {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 30px;
+		letter-spacing: 0.03em;
+		color: $color_3;
+		padding: 0px 24px 20px;
+		position: relative;
+		z-index: 1;
+	}
+
+}
