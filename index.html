@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,7 +76,7 @@
                 <header class="header__main"> <!-- class="page-header container-for-dimensions" -->
                     <a class="logo logo--headersection" href="index.html"> <!-- class="link header-logo" -->
                         <span class="logo__headertext">Web</span>Studio</a> <!-- class="span-for-logo" -->
-                    <nav class="header__navigation"> <!-- class="header-navigation" -->
+                    <nav class="menu header__navigation"> <!-- class="header-navigation" -->
                         <ul class="header__navlist unstyled-list"> <!-- class="navigation-list unstyled-list" -->
                             <li class="header header__navlist--item"> <!-- class="nav-list-item" -->
                                 <a class="header__navigation--link link active-link" href="index.html">Studio</a> <!-- class="link navigation-link active-link" -->
@@ -91,7 +92,7 @@
             
                     <!--RightNavigationSection-->
             
-                    <ul class="header__right-navigation-list unstyled-list"> <!-- class="right-navigation-list unstyled-list" -->
+                    <ul class="menu header__right-navigation-list unstyled-list"> <!-- class="right-navigation-list unstyled-list" -->
                         <li class="header__contact-list-item"> <!-- class="contact-list-item" -->
                             <a class="header__right-navigation-contact link" href="mailto:info@devstudio.com"> <!-- class="link right-navigation-contact" -->
                                 <svg class="header__right-navigation-icon-1" width="16px" height="12px"> <!-- class="right-navigation-icon-1" -->
@@ -108,6 +109,25 @@
                                 +1 212-772-4150</a>
                         </li>
                     </ul>
+                             <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                    >
+                    <svg
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                </button>
                 </header>
             </div>
         </section>
@@ -116,7 +136,7 @@
 
         <section class="studio-height">  <!-- class="studio-height studio-height-background-image" -->
             <h1 class="studio-height__title">EFFECTIVE SOLUTIONS FOR<br> YOUR BUSINESS</h1> <!-- class="first-studio-page-text" -->
-            <button data-modal-open class="studio-height__button" type="button">Request our service</button> <!-- class="button-studio" -->
+            <button data-modal-open class="studio-height__button" type="button">Request our service</button> <!-- class="button-studio" --> 
         </section>
 
 
@@ -140,7 +160,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="grid__feature-studio">  
+                    <li class="grid__feature">  
                         <div class="feature-svgcontainer"> 
                             <div class="feature-svgcontainer__item"> 
                                 <svg class=""> 
@@ -156,7 +176,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="grid__feature-studio">  
+                    <li class="grid__feature">  
                         <div class="feature-svgcontainer"> 
                             <div class="feature-svgcontainer__item"> 
                                 <svg class=""> 
@@ -172,7 +192,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="grid__feature-studio">  
+                    <li class="grid__feature">  
                         <div class="feature-svgcontainer"> 
                             <div class="feature-svgcontainer__item"> 
                                 <svg class=""> 
@@ -221,7 +241,7 @@
         <section class="section"> <!--class="container-for-dimensions"-->
             <div class="container">
                 <h2 class="section__title">Our Team</h2> <!--class="center-text"-->
-                <ul class="grid"> <!--class="container-list-studio unstyled-list"-->
+                <ul class="grid "> <!--class="container-list-studio unstyled-list"-->
                     <li class="grid__item">
         
                         <div class="member">
@@ -461,6 +481,75 @@
         </section>
     </main>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+  
+        <nav class="header__navigation"> 
+            <ul class="header__navlist unstyled-list menu--mobile"> 
+                <li class="header header__navlist--item"> <!-- class="nav-list-item" -->
+                    <a class="header__navigation--link link " href="index.html">Studio</a> <!-- class="link navigation-link active-link" -->
+                </li> 
+                <li class="header header__navlist--item"> 
+                    <a class="header__navigation--link link" href="Portfolio.html">Portfolio</a> 
+                </li> 
+                <li class="header header__navlist--item"> 
+                    <a class="header header__navigation--link link" href="Contacts.html">Contacts</a>
+                </li> 
+            </ul>
+        </nav>
+
+        <!--RightNavigationSection-->
+
+        <ul class="mobile unstyled-list menu--rcontact"> <!-- class="header__right-navigation-list" -->
+            <li class="mobile__tel"> <!-- class="header__contact-list-item" -->
+                <a class=" link" href="tel:+12127724150"> <!-- class="header__right-navigation-contact" -->
+                    +1 212-772-4150</a>
+            </li>
+            
+            <li class="mobile__contact"> <!-- class="header__contact-list-item" -->
+                <a class=" link" href="mailto:info@devstudio.com"> <!-- class="header__right-navigation-contact" -->
+                    info@devstudio.com
+                </a>
+            </li>
+            
+            <li>
+                <ul class="mobile__social unstyled-list">
+                    <li class="">
+                        <a class=" link" href="#">Instagram</a> 
+                    </li>
+                    <li><span>|</span></li>
+                    <li>
+                        <a class=" link" href="#">Twitter</a> 
+                    </li>
+                    <li><span>|</span></li>
+                    <li>
+                        <a class=" link" href="#">Facebook</a> 
+                    </li>
+                    <li><span>|</span></li>
+                    <li>
+                        <a class=" link" href="#">Linkedin</a>
+                    </li>
+                </ul>
+                
+            </li>
+
+        </ul>
+      </div>
+
     <!--PageFooter-->
     <footer class="page-footer"> <!--class="page-footer"-->
         <section class="section section--footer">
@@ -521,5 +610,6 @@
         </section>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -44,10 +44,23 @@ body {
 
 
 .container {
-	width: 1200px;
+	width: 480px;
 	margin: 0px auto;
 	list-style: none;
 }
+
+@media screen and (min-width: 768px){
+		.container{
+			width: 768px;
+		}
+	}
+
+	@media screen and (min-width: 1200px){
+		.container{
+			width: 1200px;
+		}
+		
+	}
 
 .grid {
 	display: flex;

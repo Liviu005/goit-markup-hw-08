@@ -7,6 +7,7 @@
 }
 .grid__what-we-do-list {
 	position: relative;
+	flex-basis: calc(100% / 4 - 16px);
 }
 .element__text {
 	position: absolute;

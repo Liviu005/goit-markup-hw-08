@@ -35,3 +35,19 @@
 		fill: #AFB1B8;
 	}
 }
+
+@media screen and (min-width: 768px){
+	.customers-container{
+	flex-basis: calc((100% - 2 * 30px) / 3);
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.section__title{
+		text-align: center;
+	}
+	.customers-container{
+	flex-basis: calc((100% - 5 * 30px) / 6);
+	text-align: center;
+	}
+}
