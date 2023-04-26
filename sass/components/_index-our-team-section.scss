@@ -1,27 +1,43 @@
 @import"../utils/vars" ;
 
+
+
 .grid__item {
-	// width: 270px;
-	height: 428px;
+	width: 450px;
+	height: 622px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
 	background: #FFFFFF;
 	border-bottom: 1px solid #EEEEEE;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
+.section--four{
+	background: $background-color_4;
+	padding-top: 60px;
+}
+
+.grid--team{
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+}
 
 
 
 .section__title {
-	font-size: 36px;
-	line-height: 42px;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 33px;
 	text-align: center;
 	letter-spacing: 0.03em;
-	padding-bottom: 50px;
-	margin-top: 94px;
+	color: $color_1;
+	padding-bottom: 30px;
 }
 
 .member {
+	
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
@@ -48,8 +64,8 @@
 	}
 
 	&__image{
-		height: 260px;
-		// width: 270px;
+		width: 450px;
+		height: 460px;
 	}
 
 }
@@ -113,14 +129,117 @@
 	}
 }
 
-@media screen and (min-width: 768px){
-	.member{
-	flex-basis: calc((100% - 2 * 30px) / 2);
-	}
-}
+// @media screen and (min-width: 768px) and (max-width: 1279px) {
+// 	.member:nth-child(1) .member__image {
+// 		content: url(/images/team/member1-tablet.jpg);
+//   }
+// 	.member:nth-child(2) .member__image {
+// 	content: url(/images/team/member2-tablet.jpg);
+// 	}
+// 	.member:nth-child(3) .member__image {
+// 		content: url(/images/team/member3-tablet.jpg);
+// 	}
+// 	.member:nth-child(4) .member__image {
+// 	content: url(/images/team/member4-tablet.jpg);
+// 	}
+// }
 
-@media screen and (min-width: 1200px){
-	.member{
-	flex-basis: calc((100% - 3 * 30px) / 4);
-	}
-}
+// @media screen and (min-width: 1280px) {
+// 	.member:nth-child(1) .member__image {
+// 		content: url(/images/team/member1-desktop.jpg);
+//   }
+// 	.member:nth-child(2) .member__image {
+// 	content: url(/images/team/member2-desktop.jpg);
+// 	}
+// 	.member:nth-child(3) .member__image {
+// 		content: url(/images/team/member3-desktop.jpg);
+// 	}
+// 	.member:nth-child(4) .member__image {
+// 	content: url(/images/team/member4-desktop.jpg);
+// 	}
+// }
+
+
+
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+// 	.member:nth-child(1) .member__image {
+// 		content: url(/images/team/member1-mobile-2x.jpg);
+//   }
+//   .member:nth-child(2) .member__image {
+// 	content: url(/images/team/member2-mobile-2x.jpg);
+// 	}
+// 	.member:nth-child(3) .member__image {
+// 		content: url(/images/team/member3-mobile-2x.jpg);
+//   }
+//   .member:nth-child(4) .member__image {
+// 	content: url(/images/team/member4-mobile-2x.jpg);
+// 	}
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1279px) and (min-device-pixel-ratio: 2),
+//   screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi),
+//   screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+// 	.member:nth-child(1) .member__image {
+// 		content: url(/images/team/member1-tablet-2x.jpg);
+//   }
+// 	.member:nth-child(2) .member__image {
+// 	content: url(/images/team/member2-tablet-2x.jpg);
+// 	}
+// 	.member:nth-child(3) .member__image {
+// 		content: url(/images/team/member3-tablet-2x.jpg);
+// 	}
+// 	.member:nth-child(4) .member__image {
+// 	content: url(/images/team/member4-tablet-2x.jpg);
+// 	}
+// }
+// @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+//   screen and (min-width: 1280px) and (min-resolution: 192dpi),
+//   screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+// 	.member:nth-child(1) .member__image {
+// 		content: url(/images/team/member1-desktop-2x.jpg);
+//   }
+// 	.member:nth-child(2) .member__image {
+// 	content: url(/images/team/member2-desktop-2x.jpg);
+// 	}
+// 	.member:nth-child(3) .member__image {
+// 		content: url(/images/team/member3-desktop-2x.jpg);
+// 	}
+// 	.member:nth-child(4) .member__image {
+// 	content: url(/images/team/member4-desktop-2x.jpg);
+// 	}
+// }
+
+// @media screen and (min-width: 768px){
+// 	.member{
+// 	flex-basis: calc((100% - 2 * 30px) / 2);
+// 	}
+// }
+
+// @media screen and (min-width: 1200px){
+// 	.member{
+// 	flex-basis: calc((100% - 3 * 30px) / 4);
+// 	}
+// }
+
+// @media screen and (min-width: 768px) {
+// 	.grid {
+// 	  display: flex;
+// 	  flex-wrap: wrap;
+// 	  justify-content: space-evenly;
+// 	  padding: 0;
+// 	}
+// 	.grid {
+// 	  width: 354px;
+// 	}
+//   }
+  
+//   @media screen and (min-width: 1200px) {
+// 	.grid {
+// 	  flex-direction: row;
+// 	}
+// 	.grid {
+// 	  width: 270px;
+// 	}
+//   }

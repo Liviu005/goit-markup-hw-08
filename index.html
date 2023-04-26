@@ -141,21 +141,21 @@
 
 
         <!--Features-Section-->
-        <section class="section"> <!-- class="container-for-dimensions" -->
+        <section class="section section--features"> <!-- class="container-for-dimensions" -->
             <div class="container">
                 <ul class="grid grid--feature"> <!--class="container-feature-studio unstyled-list" -->
                     <li class="grid__feature">  <!--class="feature-studio-list unstyled-list" -->
                         <div class="feature-svgcontainer"> <!--class="svg-container-features" -->
                             <div class="feature-svgcontainer__item"> <!--class="center-svg" -->
-                                <svg class=""> <!--class="svg-dimensions-features" -->
+                                <svg width="70px" height="70px"> <!--class="svg-dimensions-features" -->
                                     <use href="images/icons-svg.svg#icon-antenna-1-1"></use>
                                 </svg>
                             </div>
                             <div class="feature-content"> <!--class="feature-text" -->
                                 <h3 class="feature-content__title">ATTENTION TO DETAILS</h3> <!--class="strenghts-title" -->
-                                <p class="feature-content__description">We go into all the details and processes<br> <!--class="strenghts-description" -->
+                                <p class="feature-content__description">We go into all the details and processes <!--class="strenghts-description" -->
                                     of your business to develop a
-                                    <br> customized solution.
+                                    customized solution.
                                 </p> 
                             </div>
                         </div>
@@ -163,15 +163,15 @@
                     <li class="grid__feature">  
                         <div class="feature-svgcontainer"> 
                             <div class="feature-svgcontainer__item"> 
-                                <svg class=""> 
+                                <svg width="70px" height="70px"> 
                                     <use href="images/icons-svg.svg#icon-clock-1-1"></use>
                                 </svg>
                             </div>
                             <div class="feature-content"> 
                                 <h3 class="feature-content__title">PUNCTUALITY</h3> 
-                                <p class="feature-content__description">With us, you can feel safe and secure. <br>
+                                <p class="feature-content__description">With us, you can feel safe and secure.
                                     An important principle of the company:
-                                    <br>respect your time and deadlines.
+                                    respect your time and deadlines.
                                 </p> 
                             </div>
                         </div>
@@ -179,14 +179,14 @@
                     <li class="grid__feature">  
                         <div class="feature-svgcontainer"> 
                             <div class="feature-svgcontainer__item"> 
-                                <svg class=""> 
+                                <svg width="70px" height="70px"> 
                                     <use href="images/icons-svg.svg#icon-diagram-1-1"></use>
                                 </svg>
                             </div>
                             <div class="feature-content"> 
                                 <h3 class="feature-content__title">PLANNING</h3> 
-                                <p class="feature-content__description">You will be able to observe and<br>
-                                    participate in every phase of solution<br>
+                                <p class="feature-content__description">You will be able to observe and
+                                    participate in every phase of solution
                                     development and implementation.</p> 
                                 </p> 
                             </div>
@@ -195,14 +195,14 @@
                     <li class="grid__feature">  
                         <div class="feature-svgcontainer"> 
                             <div class="feature-svgcontainer__item"> 
-                                <svg class=""> 
+                                <svg width="70px" height="70px"> 
                                     <use href="images/icons-svg.svg#icon-astronaut-1-1"></use>
                                 </svg>
                             </div>
                             <div class="feature-content"> 
                                 <h3 class="feature-content__title">MODERN TECHNOLOGIES</h3> 
-                                <p class="feature-content__description">We use innovative tools to solve<br>
-                                    assigned tasks. It's time to simplify work<br>
+                                <p class="feature-content__description">We use innovative tools to solve
+                                    assigned tasks. It's time to simplify work
                                     processes.</p> 
                                 </p> 
                             </div>
@@ -213,8 +213,8 @@
             </div>
         </section>
         <!--What-we-do-section-->
-        <section class="section">  <!-- class="container-for-dimensions padding-bottom-class" -->
-            <div class="container">
+        <section class="section section--three">  <!-- class="container-for-dimensions padding-bottom-class" -->
+            <div class="container third-section">
             <h2 class="section__title">What we do</h2> <!-- class="center-text" -->
                 <ul class="grid grid--what-we-do-section"> <!-- class="what-we-do-images unstyled-list" -->
                     <li class="grid__what-we-do-list">
@@ -238,14 +238,40 @@
                 </ul>
           </section>
         <!--Our-team-Section-->
-        <section class="section"> <!--class="container-for-dimensions"-->
+        <section class="section section--four"> <!--class="container-for-dimensions"-->
             <div class="container">
                 <h2 class="section__title">Our Team</h2> <!--class="center-text"-->
-                <ul class="grid "> <!--class="container-list-studio unstyled-list"-->
+                <ul class="grid grid--team"> <!--class="container-list-studio unstyled-list"-->
                     <li class="grid__item">
         
                         <div class="member">
-                            <img class="member__image" height="260" width="270" src="images/team1.jpg" alt="Christopher Walker">
+
+                            <!-- <img class="member__image" 
+                            src="/images/team/member1-mobile.jpg" alt="Christopher Walker"
+                            srcset="/images/team/member1-mobile.jpg 480w,
+                            /images/team/member1-tablet.jpg 768w,
+                            /images/team/member1-desktop.jpg 1200w">  -->
+
+
+                            <picture class="member__image">
+                                <source
+                                  media="screen and (max-width: 767px)"
+                                  srcset="/images/team/member1-mobile.jpg 1x, /images/team/member1-mobile.jpg 2x"
+                                />
+                                <source
+                                  media="screen and (min-width: 768px) and (max-width: 1279px)"
+                                  srcset="/images/team/member1-tablet.jpg 1x, /images/team/member1-tablet-2x.jpg 2x"
+                                />
+                        
+                                <source
+                                  media="screen and (min-width: 1280px)"
+                                  srcset="/images/team/member1-desktop.jpg 1x, /images/team/member1-desktop-2x.jpg 2x"
+                                />
+                        
+                                <img src="/images/team/member1-mobile.jpg" alt="Christopher Walker" />
+                            </picture>
+
+
                             <div class="member__details">
                                 <h3 class="member__name">Christopher Walker</h3> <!--class="container-title-studio"-->
                                 <p class="member__occupation">Product Designer</p> <!--class="container-sub-title-studio"-->
@@ -287,7 +313,28 @@
                     </li>
                     <li class="grid__item">
                         <div class="member">
-                            <img class="member__image" src="images/team2.jpg" alt="Kylie Evans">
+                            
+
+                            <picture class="member__image">
+                                <source
+                                  media="screen and (max-width: 767px)"
+                                  srcset="/images/team/member2-mobile.jpg 1x, /images/team/member2-mobile-2x.jpg 2x"
+                                />
+                                <source
+                                  media="screen and (min-width: 768px) and (max-width: 1279px)"
+                                  srcset="/images/team/member2-tablet.jpg 1x, /images/team/member2-tablet-2x.jpg 2x"
+                                />
+                        
+                                <source
+                                  media="screen and (min-width: 1280px)"
+                                  srcset="/images/team/member2-desktop.jpg 1x, /images/team/member2-desktop-2x.jpg 2x"
+                                />
+                        
+                                <img src="/images/team/member2-mobile.jpg" alt="Kylie Evans" />
+                              </picture>
+
+
+
                             <div class="member__details">
                                 <h3 class="member__name">Kylie Evans</h3>
                                 <p class="member__occupation">Frontend Developer</p>
@@ -328,7 +375,27 @@
                     </li>
                     <li class="grid__item">
                         <div class="member">
-                            <img class="member__image" src="images/team3.jpg" alt="Ryan Harris">
+                            <!-- <img class="member__image" src="/images/team/member3-mobile.jpg" alt="Ryan Harris"> -->
+
+                            <picture class="member__image">
+                                <source
+                                  media="screen and (max-width: 767px)"
+                                  srcset="/images/team/member3-mobile.jpg 1x, /images/team/member3-mobile-2x.jpg 2x"
+                                />
+                                <source
+                                  media="screen and (min-width: 768px) and (max-width: 1279px)"
+                                  srcset="/images/team/member3-tablet.jpg 1x, /images/team/member3-tablet-2x.jpg 2x"
+                                />
+                        
+                                <source
+                                  media="screen and (min-width: 1280px)"
+                                  srcset="/images/team/member3-desktop.jpg 1x, /images/team/member3-desktop-2x.jpg 2x"
+                                />
+                        
+                                <img src="/images/team/member3-mobile.jpg" alt="Ryan Harris" />
+                              </picture>
+
+
                             <div class="member__details">
                                 <h3 class="member__name">Ryan Harris</h3>
                                 <p class="member__occupation">Marketing</p>
@@ -369,7 +436,28 @@
                     </li>
                     <li class="grid__item">
                         <div class="member">
-                            <img class="member__image" src="images/team4.jpg" alt="Tyler Moore">
+                            <!-- <img class="member__image" src="/images/team/member4-mobile.jpg" alt="Tyler Moore"> -->
+
+                            <picture class="member__image">
+                                <source
+                                  media="screen and (max-width: 767px)"
+                                  srcset="/images/team/member4-mobile.jpg 1x, /images/team/member4-mobile-2x.jpg 2x"
+                                />
+                                <source
+                                  media="screen and (min-width: 768px) and (max-width: 1279px)"
+                                  srcset="/images/team/member4-tablet.jpg 1x, /images/team/member4-tablet-2x.jpg 2x"
+                                />
+                        
+                                <source
+                                  media="screen and (min-width: 1280px)"
+                                  srcset="/images/team/member4-desktop.jpg 1x, /images/team/member4-desktop-2x.jpg 2x"
+                                />
+                        
+                                <img src="/images/team/member4-mobile.jpg" alt="Tyler Moore" />
+                              </picture>
+
+
+
                             <div class="member__details">
                                 <h3 class="member__name">Tyler Moore</h3>
                                 <p class="member__occupation">UI Designer</p>
@@ -412,19 +500,19 @@
             </div>
         </section>
         <!--Regular-Customers-->
-        <section class="section"> <!--class="container-for-dimensions"-->
+        <section class="section section--five"> <!--class="container-for-dimensions"-->
             <div class="container">
                 <h2 class="section__title">Regular Customers</h2> <!--class="center-text-1"-->
                 <ul class="grid grid--feature-1">  <!--class="container-feature-studio-1 unstyled-list"-->
-                    <div class="customers-container">  <!--class="svg-container-regular-customers"-->
-                        <li class=""> <!--class="svg-container"-->
+                      <!--class="svg-container-regular-customers"-->
+                        <li class="customers-container"> <!--class="svg-container"-->
                             <div class="svg-container-customers"> <!--svg-container-regular-customers-svg"-->
                                 <svg class="svg-container-customers__svg"> <!--class="svg-dimensions-regular-customers"-->
                                     <use href="images/icons-svg.svg#icon-Logo"></use>
                                 </svg>
                             </div>
                         </li>
-                    </div>
+                    
 
                     <div class="customers-container">  
                         <li class=""> 
@@ -556,7 +644,6 @@
             <div class="container">
                 <div class="section__footer-style"> <!--class="footer-style container-for-dimensions"-->
                     <div class="section__footer-logo-container"> <!--class="footer-logo-container"-->
-                        <section class=""> <!--class="footer-section"-->
                             <a class="section__footer-logo link" href="index.html"> <!--class="footer-logo link"-->
                                 <span class="section__span-logo">Web</span>Studio</a> <!--class="span-for-logo"-->
                             <address>
@@ -567,7 +654,6 @@
                                     
                                 </ul>
                             </address>
-                        </section>
                     </div>
                     <section class="section__find-us-section"> <!--class="find-us-section"-->
                         <p class="section__find-us-text">Find us on:</p> <!--class="find-us-text"-->

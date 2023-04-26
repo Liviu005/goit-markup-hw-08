@@ -1,5 +1,9 @@
 @import"../utils/vars" ;
 
+.section--three{
+	display: none;
+}
+
 .grid--what-we-do-section {
 	align-items: center;
 	justify-content: center;
@@ -35,3 +39,10 @@
 	height: 294px;
 	width: 370px;
 }
+
+
+@media screen and (max-width: 1199px) {
+	.third-section {
+	  display: none;
+	}
+  }

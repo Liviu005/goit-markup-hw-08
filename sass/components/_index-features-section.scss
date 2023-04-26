@@ -1,34 +1,26 @@
 @import"../utils/vars" ;
 
+.section--features{
+	padding: 0;
+	padding-top: 60px;
+
+}
+
 .grid--feature {
 	// flex-wrap: wrap;
 	padding: 0;
 	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
 }
-.grid--feature-1 {
-	// flex-wrap: wrap;
-	padding: 0;
-	align-items: center;
-}
+
 .grid__feature {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	// flex-basis: calc(100% / 4 - 16px);
 }
-
-@media screen and (min-width: 768px){
-	.grid__feature{
-	flex-basis: calc((100% - 2 * 30px) / 2);
-	}
-}
-
-@media screen and (min-width: 1200px){
-	.grid__feature{
-	flex-basis: calc((100% - 3 * 30px) / 4);
-	}
-}
-
 
 .feature-svgcontainer {
 	display: flex;
@@ -39,7 +31,7 @@
 	height: 251px;
 
 	&__item {
-		// width: 270px;
+		width: 450px;
 		height: 120px;
 		background-color: $background-color_4;
 		display: flex;
@@ -54,13 +46,16 @@
 }
 
 .feature-content {
-	height: 120px;
-	// width: 270px;
+	height: 226px;
+	width: 450px;
 
 	&__title {
 		padding-top: 30px;
 		padding-bottom: 10px;
 		font-weight: 700;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 	}
@@ -73,4 +68,51 @@
 		color: $color_3;
 	}
 
+}
+
+@media screen and (min-width: 768px){
+
+	.grid--feature {
+	flex-basis: calc((100% - 2 * 30px) / 2);
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.grid--feature {
+		display: flex;
+		flex-direction: row;
+		margin-left: 15px;
+	}
+	.grid__feature{
+	flex-basis: calc((100% - 3 * 30px) / 4);
+	}
+}
+
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .made-section__background-container {
+    background: url(../images/made-background-M-2x.png);
+    top: 130px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+  .made-section {
+    &__background-container {
+      display: none;
+    }
+
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .made-section {
+    background: url(../images/made-background-D-2x.png);
+    background-repeat: no-repeat;
+  }
 }
